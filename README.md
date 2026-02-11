@@ -43,23 +43,23 @@ Sample.Cqrs.Api
 → Controllers, middleware, startup
 
 Sample.Cqrs.Application
-→ CQRS handlers
-→ Validators
-→ Interfaces
++ CQRS handlers
++ Validators
++ Interfaces
 
 Sample.Cqrs.Domain
-→ Entities
-→ Base models
++ Entities
++ Base models
 
 Sample.Cqrs.Infrastructure
-→ EF Core
-→ Security
-→ Repositories
-→ Migrations
-→ Seeds
++ EF Core
++ Security
++ Repositories
++ Migrations
++ Seeds
 
 Simple.Cqrs.Tests
-→ Unit tests
++ Unit tests
 
 Sample.Cqrs.Api.Tests
-→ Integration tests
++ Integration tests
