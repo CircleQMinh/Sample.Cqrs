@@ -40,7 +40,9 @@ It demonstrates secure authentication, layered separation of concerns, validatio
 ## Project Structure
 
 Sample.Cqrs.Api
-→ Controllers, middleware, startup
++ Controllers
++ Middleware
++ Startup
 
 Sample.Cqrs.Application
 + CQRS handlers
