@@ -1,0 +1,6 @@
+@Sample.Cqrs.Api_HostAddress = http://localhost:5195
+
+GET {{Sample.Cqrs.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

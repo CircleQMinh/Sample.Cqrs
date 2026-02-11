@@ -1,0 +1,25 @@
+dotnet new sln -n Sample.Cqrs
+dotnet new webapi -n Sample.Cqrs.Api
+dotnet new classlib -n Sample.Cqrs.Application
+dotnet new classlib -n Sample.Cqrs.Domain
+dotnet new classlib -n Sample.Cqrs.Infrastructure
+dotnet sln add Sample.Cqrs.Api/Sample.Cqrs.Api.csproj
+dotnet sln add Sample.Cqrs.Application/Sample.Cqrs.Application.csproj
+dotnet sln add Sample.Cqrs.Domain/Sample.Cqrs.Domain.csproj
+dotnet sln add Sample.Cqrs.Infrastructure/Sample.Cqrs.Infrastructure.csproj
+
+dotnet add Sample.Cqrs.Application package MediatR
+dotnet add Sample.Cqrs.Application package MediatR.Extensions.Microsoft.DependencyInjection
+dotnet add Sample.Cqrs.Application package FluentValidation
+dotnet add Sample.Cqrs.Application package FluentValidation.DependencyInjectionExtensions
+
+dotnet add Sample.Cqrs.Infrastructure package Microsoft.EntityFrameworkCore
+dotnet add Sample.Cqrs.Infrastructure package Microsoft.EntityFrameworkCore.SqlServer
+
+
+dotnet add Sample.Cqrs.Api reference Sample.Cqrs.Application
+dotnet add Sample.Cqrs.Api reference Sample.Cqrs.Infrastructure
+dotnet add Sample.Cqrs.Application reference Sample.Cqrs.Domain
+dotnet add Sample.Cqrs.Infrastructure reference Sample.Cqrs.Domain
+
+
