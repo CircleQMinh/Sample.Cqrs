@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
-namespace Sample.Cqrs.Application.Abstractions
+namespace Sample.Cqrs.Application.Abstractions.Repositories
 {
     public interface IGenericRepository<T> where T : class
     {

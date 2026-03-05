@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\Platform\**" />
+    <EmbeddedResource Remove="Features\Platform\**" />
+    <None Remove="Features\Platform\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
     <PackageReference Include="MediatR" Version="14.0.0" />
@@ -14,11 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sample.Cqrs.Domain\Sample.Cqrs.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\Command\Queries\" />
-    <Folder Include="Features\Platform\" />
   </ItemGroup>
 
 </Project>

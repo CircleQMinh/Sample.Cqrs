@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sample.Cqrs.Application.Abstractions;
+using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Domain.Common;
 using Sample.Cqrs.Infrastructure.Persistence;
 using System;
