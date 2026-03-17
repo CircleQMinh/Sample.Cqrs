@@ -23,8 +23,8 @@ namespace Sample.Cqrs.Api.Controllers
         {
             var response = await _mediator.Send(request);
 
-            if (!response.Success)
-                return Unauthorized(response);
+            //if (!response.Success)
+            //    return Unauthorized(response);
 
             return Ok(response);
         }
