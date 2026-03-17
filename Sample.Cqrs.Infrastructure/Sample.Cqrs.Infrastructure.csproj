@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sample.Cqrs.Application\Sample.Cqrs.Application.csproj" />
-    <ProjectReference Include="..\Sample.Cqrs.Domain\Sample.Cqrs.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +15,7 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.23" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.15.0" />
+    <PackageReference Include="Scrutor" Version="7.0.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
   </ItemGroup>
 

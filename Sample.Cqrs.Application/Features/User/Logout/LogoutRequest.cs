@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Domain.Common;
 using System;
 using System.Collections.Generic;
@@ -8,5 +9,5 @@ using System.Threading.Tasks;
 
 namespace Sample.Cqrs.Application.Features.User.Logout
 {
-    public sealed record LogoutRequest() : IRequest<BaseResponse<string>>;
+    public record LogoutRequest() : IRequest<BaseResponse<string>>;
 }

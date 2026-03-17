@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Features.User.Dtos;
 using Sample.Cqrs.Domain.Common;
 using System;

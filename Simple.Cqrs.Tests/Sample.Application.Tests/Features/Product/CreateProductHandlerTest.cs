@@ -2,11 +2,6 @@
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Application.Abstractions.Security;
 using Sample.Cqrs.Application.Features.Product.CreateProduct;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using Entities = Sample.Cqrs.Domain.Entities;
 namespace Sample.Cqrs.Tests.Sample.Application.Tests.Features.Product

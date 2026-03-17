@@ -14,5 +14,11 @@ namespace Sample.Cqrs.Domain.Entities
         public string PasswordHash { get; set; } 
         public string Role { get; set; } = "User";
 
+        public User Update()
+        {
+            //check email format ...
+
+            return this;
+        }
     }
 }

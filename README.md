@@ -10,7 +10,7 @@ It demonstrates secure authentication, layered separation of concerns, validatio
 ## Key Features
 
 - Clean Architecture  
-- CQRS with MediatR  
+- CQRS with custom Mediator  
 - JWT Authentication  
 - Entity Framework Core  
 - FluentValidation pipeline  

@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Application.Abstractions.Security;
 using Sample.Cqrs.Application.Features.Product.Dtos;

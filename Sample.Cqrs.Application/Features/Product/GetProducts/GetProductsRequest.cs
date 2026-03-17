@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Features.Product.Dtos;
 using Sample.Cqrs.Domain.Common;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Cqrs.Application.Features.Product.GetProducts
 {
-    public sealed record GetProductsRequest(
+    public record GetProductsRequest(
         string? Search,
         int PageNumber = 1,
         int PageSize = 10

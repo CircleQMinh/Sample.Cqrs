@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Domain.Common;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 using Entities = Sample.Cqrs.Domain.Entities;
 namespace Sample.Cqrs.Application.Features.Product.DeleteProduct
 {
-    public sealed class DeleteProductHandler
+    public class DeleteProductHandler
         : IRequestHandler<DeleteProductRequest, BaseResponse<string>>
     {
         private readonly IGenericRepository<Entities.Product> _repository;

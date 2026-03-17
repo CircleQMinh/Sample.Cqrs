@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 using Sample.Cqrs.Application.Abstractions.Security;
+using Sample.Cqrs.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,3 +37,4 @@ namespace Sample.Cqrs.Infrastructure.Security
         }
     }
 }
+

@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Application.Features.Product.Dtos;
 using Sample.Cqrs.Domain.Common;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 using Entities = Sample.Cqrs.Domain.Entities;
 namespace Sample.Cqrs.Application.Features.Product.GetProducts
 {
-    public sealed class GetProductsHandler
+    public class GetProductsHandler
         : IRequestHandler<GetProductsRequest, BaseResponse<List<ProductDto>>>
     {
         private readonly IGenericRepository<Entities.Product> _repository;

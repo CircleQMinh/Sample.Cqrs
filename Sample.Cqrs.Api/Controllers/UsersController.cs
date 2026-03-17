@@ -1,9 +1,9 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sample.Cqrs.Application.Features.User.GetCurrentUser;
 using Sample.Cqrs.Application.Features.User.CreateUser;
+using Sample.Cqrs.Application.Abstractions.Mediator;
 
 namespace Sample.Cqrs.Api.Controllers
 {

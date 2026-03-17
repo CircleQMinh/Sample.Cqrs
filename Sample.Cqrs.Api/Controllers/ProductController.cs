@@ -1,11 +1,11 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sample.Cqrs.Application.Features.Product.DeleteProduct;
 using Sample.Cqrs.Application.Features.Product.CreateProduct;
 using Sample.Cqrs.Application.Features.Product.UpdateProduct;
 using Sample.Cqrs.Application.Features.Product.GetProducts;
+using Sample.Cqrs.Application.Abstractions.Mediator;
 
 namespace Sample.Cqrs.Api.Controllers
 {

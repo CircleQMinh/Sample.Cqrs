@@ -1,19 +1,17 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Sample.Cqrs.Api.Middlewares;
 using Sample.Cqrs.Application;
 using Sample.Cqrs.Application.Abstractions.Security;
 using Sample.Cqrs.Infrastructure;
-using Sample.Cqrs.Infrastructure.Persistence;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpContextAccessor();
 // Add services to the container.
+//API -> Application 
+//API -> Infrastructure (allowed only for wiring)
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddControllers();

@@ -3,7 +3,7 @@ using Sample.Cqrs.Domain.Common;
 using System.Net;
 using System.Text.Json;
 
-public sealed class ExceptionMiddleware
+public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
     private readonly ILogger<ExceptionMiddleware> _logger;

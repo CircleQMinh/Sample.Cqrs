@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Cqrs.Application.Features.User.CreateUser
 {
-    public sealed class CreateUserValidator
+    public class CreateUserValidator
        : AbstractValidator<CreateUserRequest>
     {
         public CreateUserValidator()

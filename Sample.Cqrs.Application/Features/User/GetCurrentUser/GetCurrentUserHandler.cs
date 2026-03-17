@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Application.Abstractions.Security;
 using Sample.Cqrs.Application.Features.User.Dtos;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 using Entities = Sample.Cqrs.Domain.Entities;
 namespace Sample.Cqrs.Application.Features.User.GetCurrentUser
 {
-    public sealed class GetCurrentUserHandler
+    public class GetCurrentUserHandler
         : IRequestHandler<GetCurrentUserRequest, BaseResponse<UserDto>>
     {
         private readonly IUserContext _context;

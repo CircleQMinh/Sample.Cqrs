@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using MediatR;
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Application.Abstractions.Security;
 using Sample.Cqrs.Domain.Common;

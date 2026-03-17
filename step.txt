@@ -8,8 +8,6 @@ dotnet sln add Sample.Cqrs.Application/Sample.Cqrs.Application.csproj
 dotnet sln add Sample.Cqrs.Domain/Sample.Cqrs.Domain.csproj
 dotnet sln add Sample.Cqrs.Infrastructure/Sample.Cqrs.Infrastructure.csproj
 
-dotnet add Sample.Cqrs.Application package MediatR
-dotnet add Sample.Cqrs.Application package MediatR.Extensions.Microsoft.DependencyInjection
 dotnet add Sample.Cqrs.Application package FluentValidation
 dotnet add Sample.Cqrs.Application package FluentValidation.DependencyInjectionExtensions
 

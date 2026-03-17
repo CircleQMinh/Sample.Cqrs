@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using MediatR;
+using Sample.Cqrs.Application.Abstractions.Mediator;
 using Sample.Cqrs.Application.Abstractions.Repositories;
 using Sample.Cqrs.Application.Abstractions.Security;
 using Sample.Cqrs.Application.Features.User.Dtos;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using Entities = Sample.Cqrs.Domain.Entities;
 namespace Sample.Cqrs.Application.Features.User.CreateUser
 {
-    public sealed class CreateUserHandler
+    public class CreateUserHandler
       : IRequestHandler<CreateUserRequest, BaseResponse<UserDto>>
     {
         private readonly IGenericRepository<Entities.User> _users;
